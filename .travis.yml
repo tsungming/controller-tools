@@ -10,7 +10,7 @@ go:
 git:
   depth: 3
 
-go_import_path: tsungming/controller-tools
+go_import_path: github.com/tsungming/controller-tools
 
 install:
 - go get -u github.com/golang/dep/cmd/dep
