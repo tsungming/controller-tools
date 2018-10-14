@@ -28,7 +28,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/envtest"
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-tools/test/pkg/apis"
+	"github.com/tsungming/controller-tools/test/pkg/apis"
 )
 
 var cfg *rest.Config

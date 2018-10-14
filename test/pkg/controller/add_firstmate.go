@@ -17,7 +17,7 @@ limitations under the License.
 package controller
 
 import (
-	"sigs.k8s.io/controller-tools/test/pkg/controller/firstmate"
+	"github.com/tsungming/controller-tools/test/pkg/controller/firstmate"
 )
 
 func init() {

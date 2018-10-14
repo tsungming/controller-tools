@@ -28,7 +28,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	crewv1 "sigs.k8s.io/controller-tools/test/pkg/apis/crew/v1"
+	crewv1 "github.com/tsungming/controller-tools/test/pkg/apis/crew/v1"
 )
 
 var c client.Client

@@ -23,8 +23,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client/config"
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"sigs.k8s.io/controller-runtime/pkg/runtime/signals"
-	"sigs.k8s.io/controller-tools/test/pkg/apis"
-	"sigs.k8s.io/controller-tools/test/pkg/controller"
+	"github.com/tsungming/controller-tools/test/pkg/apis"
+	"github.com/tsungming/controller-tools/test/pkg/controller"
 )
 
 func main() {

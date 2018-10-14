@@ -19,7 +19,7 @@ limitations under the License.
 // Package v1 contains API Schema definitions for the crew v1 API group
 // +k8s:openapi-gen=true
 // +k8s:deepcopy-gen=package,register
-// +k8s:conversion-gen=sigs.k8s.io/controller-tools/test/pkg/apis/crew
+// +k8s:conversion-gen=github.com/tsungming/controller-tools/test/pkg/apis/crew
 // +k8s:defaulter-gen=TypeMeta
 // +groupName=crew.k8s.io
 package v1

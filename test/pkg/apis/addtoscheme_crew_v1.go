@@ -17,7 +17,7 @@ limitations under the License.
 package apis
 
 import (
-	"sigs.k8s.io/controller-tools/test/pkg/apis/crew/v1"
+	"github.com/tsungming/controller-tools/test/pkg/apis/crew/v1"
 )
 
 func init() {

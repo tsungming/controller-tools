@@ -24,11 +24,11 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"sigs.k8s.io/controller-tools/pkg/scaffold"
-	"sigs.k8s.io/controller-tools/pkg/scaffold/controller"
-	"sigs.k8s.io/controller-tools/pkg/scaffold/input"
-	"sigs.k8s.io/controller-tools/pkg/scaffold/project"
-	"sigs.k8s.io/controller-tools/pkg/scaffold/resource"
+	"github.com/tsungming/controller-tools/pkg/scaffold"
+	"github.com/tsungming/controller-tools/pkg/scaffold/controller"
+	"github.com/tsungming/controller-tools/pkg/scaffold/input"
+	"github.com/tsungming/controller-tools/pkg/scaffold/project"
+	"github.com/tsungming/controller-tools/pkg/scaffold/resource"
 )
 
 var r *resource.Resource

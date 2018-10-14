@@ -2,7 +2,7 @@
 FROM golang:1.9.3 as builder
 
 # Copy in the go src
-WORKDIR /go/src/sigs.k8s.io/controller-tools/test
+WORKDIR /go/src/github.com/tsungming/controller-tools/test
 COPY pkg/    pkg/
 COPY cmd/    cmd/
 COPY vendor/ vendor/
@@ -22,10 +22,10 @@ RUN chmod +x $TEST_ASSET_KUBECTL
 RUN go test ./pkg/... ./cmd/...
 
 # Build
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o manager sigs.k8s.io/controller-tools/test/cmd/manager
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -o manager github.com/tsungming/controller-tools/test/cmd/manager
 
 # Copy the controller-manager into a thin image
 FROM ubuntu:latest
 WORKDIR /root/
-COPY --from=builder /go/src/sigs.k8s.io/controller-tools/test/manager .
+COPY --from=builder /go/src/github.com/tsungming/controller-tools/test/manager .
 ENTRYPOINT ["./manager"]

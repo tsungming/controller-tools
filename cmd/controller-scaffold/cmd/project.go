@@ -23,10 +23,10 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"sigs.k8s.io/controller-tools/pkg/scaffold"
-	"sigs.k8s.io/controller-tools/pkg/scaffold/input"
-	"sigs.k8s.io/controller-tools/pkg/scaffold/manager"
-	"sigs.k8s.io/controller-tools/pkg/scaffold/project"
+	"github.com/tsungming/controller-tools/pkg/scaffold"
+	"github.com/tsungming/controller-tools/pkg/scaffold/input"
+	"github.com/tsungming/controller-tools/pkg/scaffold/manager"
+	"github.com/tsungming/controller-tools/pkg/scaffold/project"
 )
 
 var prj *project.Project
