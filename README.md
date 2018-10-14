@@ -10,7 +10,7 @@ The Kubernetes controller-tools Project is a set of go libraries for building Co
 
 Learn how to engage with the Kubernetes community on the [community page](http://kubernetes.io/community/).
 
-controller-tools is a subproject of the [kubebuilder](https://github.com/kubernetes-sigs/kubebuilder) project
+controller-tools is a subproject of the [kubebuilder](https://sigs.k8s.io/kubebuilder) project
 in sig apimachinery.
 
 You can reach the maintainers of this project at:
