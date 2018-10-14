@@ -109,7 +109,7 @@ header_text "running go vet"
 
 go generate ./test/pkg/apis/...
 
-go vet ./pkg/... ./test/pkg/... ./test/cmd/... ./cmd/...
+go vet ./pkg/... ./cmd/...
 
 # go get is broken for golint.  re-enable this once it is fixed.
 #header_text "running golint"
@@ -136,7 +136,7 @@ gometalinter.v2 --disable-all \
     --enable=gocyclo \
     --line-length=170 \
     --enable=lll \
-    ./pkg/... ./test/... ./cmd/...
+    ./pkg/... ./cmd/...
 # TODO: Enable these as we fix them to make them pass
 #    --enable=maligned \
 #    --enable=safesql \
@@ -149,5 +149,3 @@ go test ./pkg/... ./cmd/... -parallel 4
 
 header_text "running test package tests"
 
-cd test
-make
