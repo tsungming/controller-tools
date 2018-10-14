@@ -107,7 +107,9 @@ setup_envs
 
 header_text "running go vet"
 
-go vet ./pkg/...
+go generate ./test/pkg/apis/...
+
+go vet ./pkg/... ./test/pkg/... ./test/cmd/... ./cmd/...
 
 # go get is broken for golint.  re-enable this once it is fixed.
 #header_text "running golint"
@@ -134,14 +136,18 @@ gometalinter.v2 --disable-all \
     --enable=gocyclo \
     --line-length=170 \
     --enable=lll \
-    --dupl-threshold=400 \
-    --enable=dupl \
-    ./pkg/...
+    ./pkg/... ./test/... ./cmd/...
 # TODO: Enable these as we fix them to make them pass
 #    --enable=maligned \
 #    --enable=safesql \
+#    --dupl-threshold=400 \
+#    --enable=dupl \
 
 header_text "running go test"
 
-go test ./pkg/... -parallel 4
+go test ./pkg/... ./cmd/... -parallel 4
 
+header_text "running test package tests"
+
+cd test
+make
